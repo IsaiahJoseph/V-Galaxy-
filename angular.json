@@ -23,9 +23,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/toastr/build/toastr.min.css",
+              "node_modules/ngf-bootstrap/dist/bootstrap.min.css",
               "src/styles.css"
-            ],
-            "scripts": []
+             ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/toastr/build/toastr.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              
+            ]
           },
           "configurations": {
             "production": {
@@ -97,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4a2f32d1-cab9-4c59-b10c-72dccba3f8e8"
   }
 }

@@ -1,0 +1,105 @@
+<div class="play__box">
+    <figure class="play__item"> 
+    <div [routerLink]="['/vid']" class="back-nav__icon-box" > 
+                        <svg class="back-nav__icon" id="back">
+                          <use xlink:href="assets/videos/sprite3.svg#icon-arrow-thin-left"></use>
+                        </svg>
+                    </div>
+                       <video class="play__video" id="{{video.id}}" autoplay controls loop>
+                        <source src="{{video.path}}" type="video/mp4">
+                        your browser is not supported!
+                    </video>
+                    <label class="name">{{video.name}}</label>
+
+
+                    <div class="infom">
+                    <p>{{video.views}}</p><p>&nbsp; {{video.date}}</p>
+                    <div class="play-nav__box">
+                    <div class="play-nav__icon-box"> 
+                        <svg class="play-nav__icon">
+                          <use xlink:href="assets/videos/sprite3.svg#icon-thumbs-up"></use>
+                        </svg>
+                        <p>1.5k</p>
+                    </div>
+                    <div class="play-nav__icon-box"> 
+                        <svg class="play-nav__icon">
+                          <use xlink:href="assets/videos/sprite3.svg#icon-thumbs-down"></use>
+                        </svg>
+                        <p>Dislikes</p>
+                    </div>
+                    <div class="play-nav__icon-box"> 
+                        <svg class="play-nav__icon">
+                          <use xlink:href="assets/videos/sprite3.svg#icon-forward"></use>
+                        </svg>
+                        <p>Share</p>
+                    </div>
+                    <div class="play-nav__icon-box"> 
+                        <svg class="play-nav__icon">
+                          <use xlink:href="assets/videos/sprite3.svg#icon-edit-cut"></use>
+                        </svg>
+                        <p>Clip</p>
+                    </div>
+                    <div class="play-nav__icon-box"> 
+                        <svg class="play-nav__icon">
+                          <use xlink:href="assets/videos/sprite3.svg#icon-list-add"></use>
+                        </svg>
+                        <p>Save</p>
+                    </div>
+                    </div>
+                    </div>
+
+
+                    <div>
+                    <figure class="review__author">
+                                           <figure class="author">
+                                                <img src="{{video.author.img}}" alt="user 1" class="review__author-photo">
+                                                <div class="review__author-box">
+                                                    <p class="review__author-name">{{video.author.name}}</p>
+                                                    <p class="review__author-subscriber">{{video.author.sub}}</p>
+                                                </div>
+                                                <div class="review__subscribe-author"></div>
+                                            </figure>
+            
+                                            <blockquote class="review__author-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                                                architecto dicta animi, totam, itaque officia ex.
+                                            </blockquote>
+                                        </figure>
+                                    </div>
+            
+                                    <div>
+                                        <figure class="comment__section">
+                                            <h3>comments</h3>
+                                            <div class="comment-block">
+                                                <div class="email__comment-icon">
+                                                    <svg class="email__comment__icon--info ">
+                                                        <use xlink:href="assets/videos/sprite.svg#icon-information-solid"></use>
+                                                    </svg>
+                                                </div>
+                                                <form action="#" class="comment">
+                                                    <input type="text" class="comment__input"
+                                                        placeholder="commenting publicly as Nick Smith">
+                                                </form>
+                                            </div>
+                                        </figure>
+                                    </div>
+                   </figure>
+                   <div class="side-gall" id="side-box">
+                    <div *ngFor="let vid of videos">
+                        <div class="details" id="side-gal" *ngIf="video.genre === vid.genre && vid.id !== video.id" >
+                        <div class="user-reviews" >
+                           <figure class="gallery__item--side" [routerLink]="['/vid', vid.id]"> 
+                               <video class="gallery__video--side" id="{{vid.id}}" muted loop>
+                                <source src="{{vid.path}}" type="video/mp4">
+                                your browser is not supported!
+                            </video>
+                            <label class="vid-title">{{vid.name}}</label>
+                               <div class="info--side"><p>{{vid.views}}</p><p>&nbsp; {{vid.date}}</p></div>
+                           </figure>
+                           
+                   </div>
+               </div>
+                    </div>
+                    
+                   </div>
+                   </div>

@@ -1,0 +1,33 @@
+.vid-container {
+    position: absolute;
+    top: 14%;
+    left: 14%;
+}
+.gallery__item {
+    margin-top: 2.5rem;
+    margin-left: 0.7rem;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+    
+    transition: transform 0.5s;
+  }
+
+  .gallery__item:hover {
+    z-index: 1000;
+    transform: scale(1.35);
+    margin-left: 10px;
+  }
+
+  .gallery__video {
+    width: 100%;
+    height: 220px;
+    margin-left: -10px;
+    background-color: var(--color-grey-light-1);
+    
+  }
+  
+  .info {
+    display: flex;
+  }

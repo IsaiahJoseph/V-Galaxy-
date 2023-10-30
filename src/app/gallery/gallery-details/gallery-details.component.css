@@ -1,0 +1,257 @@
+.play__box {
+    
+    position: absolute;
+    top: 97px;
+    display: flex;
+    flex: 1 0 0;
+  }
+
+.play__item {
+  flex: 1 0 24%;
+  margin-top: 0.5rem;
+  margin-left: 0.7rem;
+  overflow: hidden;
+  display: inline-block;
+  /* height: 800px; */
+  height: 100%;
+  padding: 1rem;
+  position: fixed;
+}
+
+.play__item:hover + .side-gall{
+    position: fixed;
+    top: 127px;
+    left: 1300px;
+}
+.play__item:hover {
+    position: relative;
+}
+
+.back-nav__icon-box {
+ 
+  height: 4rem;
+  width: 4.25rem;
+  cursor: pointer;
+  position: fixed;
+  z-index: 3000;
+  
+  
+  background-color: #ccc;
+  fill: var(--color-pri-lite);
+}
+
+.back-nav__icon {
+  height: 3rem;
+  width: 4rem;
+  
+  position: fixed;
+  fill: var(--color-pri-lite);
+}
+
+.play__video {
+    
+  width: 100%;
+  height: 620px;
+  background-color: rgb(7, 5, 10);
+  display: block;
+  border-bottom: #fff solid 7px;
+}
+
+.name {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(41, 39, 39);
+}
+
+.infom {
+  width: 95%;
+  font-size: 13px;
+  margin-top: 9px;
+  display: flex;
+  border-bottom: rgb(216, 208, 208) solid 1.8px;
+}
+.play-nav__box {
+  margin-left: 18%;
+  display: flex;
+ 
+}
+.play-nav__icon-box {
+  margin-left: 4%;
+  height: 2rem;
+  width: 6.25rem;
+  fill: var(--color-pri-lite);
+  display: flex;
+}
+.play-nav__icon {
+  height: 2rem;
+  width: 2rem;
+  padding-right: 6px;
+  fill: var(--color-pri-lite);
+}
+
+.review__author {
+  width: 95%;
+  box-shadow: var(--shadow-light);
+  padding: 2.5rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: rgb(216, 208, 208) solid 1.8px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.review__author-photo {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+
+.review__author-box {
+  margin-right: auto;
+}
+
+.review__author-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.review__author-subscriber {
+  font-size: 1rem;
+  color: var(--color-grey-dark-3);
+}
+
+.review__subscribe-author {
+  color: #f4f2f2;
+  background-color: #bd2626;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.review__author-text {
+  margin-bottom: 2rem;
+  z-index: 5000;
+  position: relative;
+}
+
+.comment__section {
+  width: 100%;
+  box-shadow: var(--shadow-light);
+}
+
+.comment-block {
+  display: flex;
+  margin-top: 20px;
+}
+
+.comment__input {
+  background-color: var(--color-grey-light-2);
+  border: none;
+  outline: none;
+  text-decoration: none;
+  margin: 0 3px 0 8px;
+  padding: 0 320px 5px 0;
+  border-bottom: rgb(216, 208, 208) solid 1.8px;
+}
+
+.comment__input:focus::-webkit-input-placeholder {
+  visibility: hidden;
+}
+
+.email__comment__icon--info {
+  height: 2.8rem;
+  width: 3.1rem;
+  fill: red;
+}
+
+/******** play side GALLERY********/ /******** play side GALLERY********/ /******** play side GALLERY**********************/
+
+
+.gallery__item--side {
+    margin-top: 2.5rem;
+    margin-left: 0.7rem;
+    width: 90%;
+    overflow: hidden;
+    display: block;
+    height: 120px;
+    padding: 1rem;
+    position: relative;
+  
+    display: flex;
+  }
+  
+  .gallery__video--side {
+    width: 35%;
+    height: 90%;
+    background-color: #f4f2f2;
+    display: block;
+  }
+  
+  .vid-title {
+    margin-left: 1rem;
+  }
+  
+  .info--side {
+    position: absolute;
+    top: 2.9rem;
+    left: 15rem;
+    display: flex;
+  }
+  .gallery__type--side {
+    /* position: absolute; */
+    top: 0;
+    left: 5rem;
+  
+    display: flex;
+  }
+
+/***** REVIEWS*****/ /***** REVIEWS*****/ /***** REVIEWS*****/ /***** REVIEWS*****/ /***** REVIEWS*****/
+
+.side-gall {
+    flex: 1 0 0;
+    height: 100%;
+    z-index: 0;
+    position: fixed;
+    top: 30px;
+    left: 1300px;
+
+    
+    background-color: var(--color-grey-light-2);
+  }
+  .side-gall {
+    position: relative;
+  }
+  
+  
+  .details {
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: -15px;
+    background-color: var(--color-grey-light-2);
+    border-bottom: rgb(216, 208, 208) solid 1.8px;
+  
+    @media only screen and (max-width: $bp-medium) {
+      padding: 3rem;
+    }
+  
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+  .details:not(:first-child) {
+    margin-bottom: -24px;
+  }
+  
+  
+      .review__user {
+          display: flex;
+          align-items: center;
+      }
